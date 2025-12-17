@@ -1,0 +1,47 @@
+/* Global Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Navbar */
+nav {
+    border-bottom: 2px solid #333; /* The thick line from your image */
+    padding-bottom: 10px;
+    margin-bottom: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700; /* Bold navigation items */
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+/* Typography Utilities */
+h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 20px; }
+h2 { font-size: 2rem; font-weight: 600; margin-bottom: 15px; }
+p { margin-bottom: 15px; color: #444; }
+a { color: inherit; text-decoration: none; }

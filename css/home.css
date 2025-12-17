@@ -1,0 +1,83 @@
+/* Header Section (Photo + Name) */
+.hero-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #eee; /* Fallback if image missing */
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    line-height: 1;
+    color: #333;
+    font-weight: 400; /* Thin 'matheus' */
+}
+
+.hero-text h1 strong {
+    display: block;
+    font-weight: 800; /* Bold 'alencastro' */
+}
+
+/* Main Grid (Welcome + Quick Links) */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Left side wider */
+    gap: 60px;
+}
+
+.welcome-column h2, .links-column h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.contact-email {
+    font-weight: 700;
+    font-style: italic;
+    color: #222;
+}
+
+/* Quick Links List */
+.quick-links {
+    list-style: none;
+}
+
+.quick-links li {
+    margin-bottom: 12px;
+}
+
+.quick-links li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #444;
+}
+
+.quick-links li a:hover {
+    text-decoration: underline;
+}
+
+.quick-links i {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}

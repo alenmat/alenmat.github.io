@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Alencastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/" onclick="route()">home</a></li>
+                <li><a href="/cv" onclick="route()">cv</a></li>
+                <li><a href="/papers" onclick="route()">papers</a></li>
+                <li><a href="https://github.com/alenmat">code</a></li>
+            </ul>
+        </nav>
+        
+        <div id="app">
+            </div>
+    </div>
+
+    <script>
+        (function() {
+            const params = new URLSearchParams(window.location.search);
+            const redirectPath = params.get('path');
+            if (redirectPath) {
+                window.history.replaceState(null, null, redirectPath);
+            }
+        })();
+    </script>
+    <script src="router.js"></script>
+</body>
+</html>
